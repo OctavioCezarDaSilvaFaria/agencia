@@ -1,0 +1,65 @@
+.hero {
+    background: url("https://investnews.com.br/wp-content/uploads/2024/02/viagem_3-1200x800.png") no-repeat center
+      center/cover;
+    color: white;
+    padding: 80px 16px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 3em;
+    margin-bottom: 16px;
+    animation: fadeInDown 1s;
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+    margin-bottom: 32px;
+    animation: fadeInUp 1s;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .hero-buttons .btn-saiba-mais,
+  .hero-buttons .btn-reserve-agora {
+    background: #ffdd57;
+    color: #fffff0;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .hero-buttons .btn-saiba-mais:hover,
+  .hero-buttons .btn-reserve-agora:hover {
+    background: #ffcc00;
+  }
